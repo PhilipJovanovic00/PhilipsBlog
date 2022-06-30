@@ -13,9 +13,13 @@ a:hover {
 
 main {
     position: absolute;
+    /*
+    border-style:solid;
+    border-color:#287EC7;
+    */
     font-size: 20px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 60px;
     z-index: -1;
     width: 100%;
 }
@@ -37,7 +41,7 @@ main {
     font-size: 16px;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 18px 20px;
     text-decoration: none;
 }
 
@@ -53,7 +57,7 @@ main {
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 18px 20px;
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
