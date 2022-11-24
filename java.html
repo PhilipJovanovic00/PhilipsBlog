@@ -7,28 +7,203 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://static.pingendo.com/bootstrap/bootstrap-4.3.1.css">
-    <title>Java Blog</title>
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <title>TechBlog Java</title>
 </head>
 <body>
-<nav>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <div class="dropdown">
-            <button class="dropbtn">Software Development
-                <i class="fa fa-caret-down"></i>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fa d-inline fa-lg fa-circle-o"></i>
+                <b> Philips TechBlog</b>
+            </a>
+            <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar10">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="dropdown-content">
-                <a href="java.html">Java</a>
-                <a href="linux.html">Linux</a>
-                <a href="#">Github</a>
+            <div class="collapse navbar-collapse" id="navbar10">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <!--Create a dropdown menu nav item with multiple options-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Development
+                        </a>
+                        <div class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item text-white" href="java.html">Java</a>
+                            <a class="dropdown-item text-white" href="linux.html">Linux</a>
+                            <a class="dropdown-item text-white" href="#">Coming soon</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Heading-->
+<div class="py-5 text-center bg-dark text-white d-flex flex-column min-vh-90 justify-content-between">
+    <div class="container py-5">
+        <div class="row">
+            <div class="mx-auto col-lg-6 col-10">
+                <h1 class="display-3 mb-4">TechBlog</h1>
+                <p class="mb-4">This is a blog site where you can read about my Tech experiences.<br>
+                    I will share different kinds of things I learned throughout my journey.
+                </p>
+                
+                <!--open modal button-->
+                <button id="GetStarted" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                    How to use
+                </button>
+                <p>
+                    <br>Scroll down to see the content
+                </p>
             </div>
         </div>
     </div>
-</nav>
-    <main>
-        <h1>Coming soon...</h1>
-    </main>
+</div>
+<!--Table of contents-->
+<!--//TODO future idea: make the content available in a sidebar
+so navigation is a bit easier and so it is accesible at all times-->
+<div class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center text-dark">Click to jump to desired topic</h1>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 class="text-center">Java</h3>
+                        <ul>
+                            <li><a href="#Intro_Java">Introduction to Java</a></li>
+                            <li><a href="#2">Java Variables</a></li>
+                            <li><a href="#3">Java Operators</a></li>
+                            <li><a href="#4">Java Decision Making</a></li>
+                            <li><a href="#5">Java Looping</a></li>
+                            <li><a href="#6">Java Methods</a></li>
+                            <li><a href="#7">Java Arrays</a></li>
+                            <li><a href="#8">Java Strings</a></li>
+                            <li><a href="#9">Java Date and Time</a></li>
+                            <li><a href="#10">Java Classes and Objects</a></li>
+                            <li><a href="#11">Java Inheritance</a></li>
+                            <li><a href="#12">Java Polymorphism</a></li>
+                            <li><a href="#13">Java Encapsulation</a></li>
+                            <li><a href="#14">Java Abstraction</a></li>
+                            <li><a href="#15">Java Interfaces</a></li>
+                            <li><a href="#16">Java Packages</a></li>
+                            <li><a href="#17">Java Exception Handling</a></li>
+                            <li><a href="#18">Java Multithreading</a></li>
+                            <li><a href="#19">Java Generics</a></li>
+                            <li><a href="#20">Java Collections</a></li>
+                            <li><a href="#21">Java Enums</a></li>
+                            <li><a href="#22">Java Annotations</a></li>
+                            <li><a href="#23">Java Reflection</a></li>
+                            <li><a href="#24">Java I/O</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Create a button in the bottom right corner if this button is pressed jump to the top of the page-->
+
+
+
+
+
+<!--Main content-->
+<div class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <a id="Intro_Java"></a>
+                <h1 class="text-center">Java</h1>
+                <p class="lead">Introduction
+                    <br>
+                    <br>Java was the first language I started learning as a student.
+                    First it seemed very difficult to write code in Java, but after a while it became easier.
+                    The main problem I had was getting a grasp of OOP (Object Oriented Programming).
+                    The more I worked with it, the easier it got and I eventually made a lot of very
+                    interesting projects that I had never thought I would be able to make.
+                    <br>
+                    </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Modal-->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">How to get the most out of the Blog</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>You can just scroll downwards.</p>
+                <p>The content is displayed in chronological order.</p>
+                <p>There is a table of contents if you are searching</p>
+                <p>for a specific topic.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+
+<!--Footer-->
+<div class="bg-secondary mt-auto">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 p-4">
+                <p class="text-center text-white">© 2022 TechBlog. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        // open modal when GetStarted button is clicked
+        var getStartedButton = document.getElementById('GetStarted');
+        
+        });
+        // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} 
+
+</script>
 </body>
 </html>
